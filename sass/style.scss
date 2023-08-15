@@ -1,0 +1,279 @@
+$laranja: #FF8600;
+$azulclaro: #758BFD;
+$azulescuro: #27187E;
+$azul: #0984E3;
+$preto: #000000;
+$branco: #FFFFFF;
+$cinza: #404040;
+$cinzaclaro: #828282;
+$fonte: 'Inter', sans-serif;
+
+@mixin imagem-de-fundo($imagem) {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url("../imagens/#{$imagem}.png");
+
+}
+
+@mixin grafico($altura, $cor) {
+    display: block;
+
+    background-color: $cor;
+
+    height: $altura;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $fonte;
+    line-height: 29px;
+    color: $branco;
+}
+
+.cabecalho {
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+    justify-content: right;
+
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% auto;
+    background-color: $preto;
+
+}
+
+
+.rodape {
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cinza;
+    padding: 5em 0;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.sidebar__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__links a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.paragrafo {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    color: $cinzaclaro;
+    padding: 1em 0;
+}
+
+.sidebar__linha {
+    margin: 3em 0;
+    color: black;
+    width: 50%;
+}
+
+.links__icone {
+    padding-left: 2em;
+    background-repeat: no-repeat;
+}
+
+.dashboard {
+    @include imagem-de-fundo("dashboard");
+    display: inline-block;
+}
+
+.pedidos {
+    @include imagem-de-fundo("lista");
+    display: inline-block;
+}
+
+table {
+    width: 80%;
+    margin: 1.5em 0;
+
+    caption {
+        text-align: left;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    thead {
+        text-align: left;
+
+        tr {
+            th {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                color: $cinzaclaro;
+            }
+        }
+    }
+
+
+    tbody {
+        tr {
+
+            td {
+                padding: 10px;
+                border-top: 1px solid rgba(108, 117, 125, 0.50);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            td:first-child {
+                display: flex;
+                align-items: center;
+                gap: 2em;
+            }
+
+        }
+    }
+}
+
+
+.sacola {
+    @include imagem-de-fundo("sacola");
+    margin: 0 auto;
+}
+
+.telefone {
+    @include imagem-de-fundo("telefone");
+    margin: 0 auto;
+}
+
+.clique {
+    @include imagem-de-fundo("clique");
+    margin: 0 auto;
+}
+
+.informacoes {
+    display: flex;
+    gap: 2em;
+    margin: 2em 0;
+
+    div {
+        width: 50%;
+        background-color: $branco;
+        border-radius: 28px;
+        padding: 1em;
+
+        h3 {
+            color: $preto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        ul {
+            display: flex;
+            gap: 1em;
+            list-style: none;
+            font-size: 14px;
+            color: $branco;
+            padding: 1em;
+
+            li {
+                text-align: center;
+                padding: 1em .5em;
+                border-radius: 24px;
+                width: 50%;
+            }
+        }
+    }
+
+    .item__sacola {
+        background-color: $laranja;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .item__telefone {
+        background-color: $azulclaro;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .item__clique {
+        background-color: $azulescuro;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+main {
+    padding: 2em;
+}
+
+button {
+    background-color: $azul;
+    padding: .5rem 1rem;
+    border-radius: 24px;
+    border: none;
+    font-weight: 600;
+}
+
+.grafico {
+    ul {
+        align-items: flex-end;
+
+        li {
+
+            p {
+                color: $preto;
+            }
+
+            .barra-um {
+                @include grafico(20px, $laranja);
+
+            }
+
+            .barra-dois {
+                @include grafico(40px, $azulclaro);
+            }
+
+            .barra-tres {
+                @include grafico(60px, $azulescuro);
+            }
+        }
+    }
+}

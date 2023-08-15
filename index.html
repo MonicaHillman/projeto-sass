@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="container">
+    <aside class="sidebar">
+        <div>
+            <img src="./imagens/logo.png" alt="Logo do DashVendas" />
+            <h1>DashVendas</h2>
+        </div>
+
+        <nav class="sidebar__links">
+            <a href="#"><span class="links__icone dashboard"></span>Dashboard</a>
+            <a href="#"><span class="links__icone pedidos"></span>Lista de pedidos</a>
+        </nav>
+    </aside>
+
+    <main class="dados">
+        <header class="cabecalho">
+            <img src="./imagens/ferramenta.png" alt="Configurações" />
+            <img src="./imagens/sino.png" alt="Notificações" />
+            <img src="./imagens/perfil.png" alt="Perfil" />
+        </header>
+
+        <h2 class="titulo">Controle suas vendas</h2>
+        <p class="paragrafo">Gráficos, pedidos, contatos, tudo em um lugar só!</p>
+
+        <table>
+            <caption>Lista de pedidos</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src='./imagens/AnaDeJesus.png' alt='ícone de perfil' />
+                        Ana de Jesus
+                    </td>
+                    <td>Produto 1</td>
+                    <td>Rua das Flores, 123</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src='./imagens/JoaoPedro.png' alt='ícone de perfil' />
+                        João Pedro
+                    </td>
+                    <td>Produto 1</td>
+                    <td>Rua das Flores, 123</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src='./imagens/CarlosSilva.png' alt='ícone de perfil' />
+                        Carlos Silva
+                    </td>
+                    <td>Produto 1</td>
+                    <td>Rua das Flores, 123</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src='./imagens/MariaSouza.png' alt='ícone de perfil' />
+                        Maria Souza
+                    </td>
+                    <td>Produto 1</td>
+                    <td>Rua das Flores, 123</td>
+                </tr>
+            </tbody>
+        </table>
+        <button>Veja mais</button>
+
+        <section class="informacoes">
+            <div>
+                <h3>Informações gerais</h3>
+                <ul class="informacoes__lista">
+                    <li class="item__sacola">
+                        <span class="icone sacola"></span>
+                        <p>28</p>
+                        <p>Vendas totais</p>
+                    </li>
+                    <li class="item__telefone">
+                        <span class="icone telefone"></span>
+                        <p>5</p>
+                        <p>Atendimentos</p>
+                    </li>
+                    <li class="item__clique">
+                        <span class="icone clique"></span>
+                        <p>1K</p>
+                        <p>Acessos</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grafico">
+                <h3>Gráfico de vendas mensais</h3>
+                <ul>
+                    <li>
+                        <p>150,00</p>
+                        <span class="barra-um"></span>
+                        <p>Janeiro</p>
+                    </li>
+                    <li>
+                        <p>200,00</p>
+                        <span class="barra-dois"></span>
+                        <p>Fevereiro</p>
+                    </li>
+                    <li>
+                        <p>300,00</p>
+                        <span class="barra-tres"></span>
+                        <p>Março</p>
+                    </li>
+                </ul>
+            </div>
+    </main>
+</body>
+
+</html>

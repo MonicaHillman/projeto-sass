@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.cabecalho {
+  display: flex;
+  gap: 1em;
+  padding: 1em 0;
+  justify-content: right;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% auto;
+  background-color: #000000;
+}
+
+.rodape {
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #404040;
+  padding: 5em 0;
+}
+.sidebar div {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__links a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.paragrafo {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  color: #828282;
+  padding: 1em 0;
+}
+
+.sidebar__linha {
+  margin: 3em 0;
+  color: black;
+  width: 50%;
+}
+
+.links__icone {
+  padding-left: 2em;
+  background-repeat: no-repeat;
+}
+
+.dashboard {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../imagens/dashboard.png");
+  display: inline-block;
+}
+
+.pedidos {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../imagens/lista.png");
+  display: inline-block;
+}
+
+table {
+  width: 80%;
+  margin: 1.5em 0;
+}
+table caption {
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+table thead {
+  text-align: left;
+}
+table thead tr th {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  color: #828282;
+}
+table tbody tr td {
+  padding: 10px;
+  border-top: 1px solid rgba(108, 117, 125, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+table tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.sacola {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../imagens/sacola.png");
+  margin: 0 auto;
+}
+
+.telefone {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../imagens/telefone.png");
+  margin: 0 auto;
+}
+
+.clique {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../imagens/clique.png");
+  margin: 0 auto;
+}
+
+.informacoes {
+  display: flex;
+  gap: 2em;
+  margin: 2em 0;
+}
+.informacoes div {
+  width: 50%;
+  background-color: #FFFFFF;
+  border-radius: 28px;
+  padding: 1em;
+}
+.informacoes div h3 {
+  color: #000000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.informacoes div ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 1em;
+}
+.informacoes div ul li {
+  text-align: center;
+  padding: 1em 0.5em;
+  border-radius: 24px;
+  width: 50%;
+}
+.informacoes .item__sacola {
+  background-color: #FF8600;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.informacoes .item__telefone {
+  background-color: #758BFD;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.informacoes .item__clique {
+  background-color: #27187E;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+main {
+  padding: 2em;
+}
+
+button {
+  background-color: #0984E3;
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+}
+
+.grafico ul {
+  align-items: flex-end;
+}
+.grafico ul li p {
+  color: #000000;
+}
+.grafico ul li .barra-um {
+  display: block;
+  background-color: #FF8600;
+  height: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.grafico ul li .barra-dois {
+  display: block;
+  background-color: #758BFD;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.grafico ul li .barra-tres {
+  display: block;
+  background-color: #27187E;
+  height: 60px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */
